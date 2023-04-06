@@ -92,9 +92,7 @@ mklink /d "C:\Users\ASK\AppData\Local\a\_test" "Z:\a\_test"
 
 以上就是对于单个文件夹的操作流程。
 
-那么当系统已经使用一段时间后，这三个文件夹下可能已经有几十个文件夹了，难道我们需要挨个手动操作吗，对懒狗来说这显然是不可能的，这里我们使用 excel 配合一些命令行和 shell 的命令来帮助我们快速迁移文件夹，输入文件夹名称，通过 excel 给出对应的命令，这里直接给出成品 excel 文件下载（链接: https://pan.baidu.com/s/1BObx0FkHaIMHrZHESAPqVg?pwd=rg6j 
-
-提取码：rg6j，失效可以私信我补链接；23/5/6更新：修复了路径里的一个小错误），有兴趣的可以自己做一个。
+那么当系统已经使用一段时间后，这三个文件夹下可能已经有几十个文件夹了，难道我们需要挨个手动操作吗，对懒狗来说这显然是不可能的，这里我们使用 excel 配合一些命令行和 shell 的命令来帮助我们快速迁移文件夹，输入文件夹名称，通过 excel 给出对应的命令，这里直接给出成品 excel 文件下载（链接: https://github.com/LeeYouRan/AppData-directory-migration/blob/main/%E9%87%8D%E5%AE%9A%E5%90%91%E8%A1%A8_%E7%A9%BA%E7%99%BD.xlsm），有兴趣的可以自己做一个。
 
 <img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.012.png" />
 
