@@ -2,7 +2,7 @@
 
 C盘主要的用户数据包含两类。一类是程序生成的数据文件（AppData文件夹），另一类是用户个人文件夹（图片、视频、下载等等，如下图）
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.001.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.001" />
 
 ` `这些数据保存在C盘会导致一系列的问题。比如在格盘重装系统时容易因为忘记备份而丢失数据，而且就算有备份，后续恢复这些文件也需要消耗大量时间；另外，大量文件堆积在C盘只会导致C盘空间越来越少，直到某一天爆满。
 
@@ -14,7 +14,7 @@ C盘主要的用户数据包含两类。一类是程序生成的数据文件（A
 
 AppData 文件夹位于 C 盘路径：C:\Users\用户名\AppData，也可以在路径栏用 %LOCALAPPDATA% 快速打开该路径，该路径下包含 Local、LocalLow、Roaming 等三个文件夹，如下图，这三个文件夹中的大部分文件都是需要迁移的。
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.002.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.002" />
 
 ` `有不少文章都用修改注册表的方式来迁移 AppData 文件夹，这种做法会将 AppData 整个文件夹迁移到其他路径，这种做法会导致部分程序无法正常运行，因此本文不采用修改注册表的方式迁移 AppData 文件夹。
 
@@ -44,17 +44,17 @@ mklink [[/d] | [/h] | [/j]] Link Target
 
 这里我们新建一个 a\_test 文件夹来举个例子，不需要看例子的直接往后面跳
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.003.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.003" />
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.004.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.004" />
 
 
 
 这里假设我要移动到 Z 盘，那么我就需要将这个文件夹剪切到 Z 盘下 
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.005.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.005" />
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.006.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.006" />
 
 
 
@@ -67,25 +67,25 @@ mklink /d "C:\Users\ASK\AppData\Local\a\_test" "Z:\a\_test"
 
 用管理员权限启动命令行，运行命令，成功后会提示创建的符号链接，如下图
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.007.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.007" />
 
 
 ` `当我们再回到之前 a\_test 的所在位置时，可以看到已经重新创建了一个同样名字的文件夹，并且这个文件夹是有一个类似快捷方式的小箭头的，代表它只是一个链接
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.008.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.008" />
 
 
 双击进入 a\_test，我们可以看到之前的 test1.txt 已经在里面了
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.009.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.009" />
 
 我们再新建一个名为 test2.txt 的文件
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.010.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.010" />
 
 ` `回到 Z 盘的 a\_test
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.011.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.011" />
 
 
 ` `可以看到是等价于直接在 Z 盘的对应文件夹中操作的
@@ -96,14 +96,14 @@ mklink /d "C:\Users\ASK\AppData\Local\a\_test" "Z:\a\_test"
 
 提取码：rg6j，失效可以私信我补链接；23/5/6更新：修复了路径里的一个小错误），有兴趣的可以自己做一个。
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.012.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.012" />
 
 
 ` `注意本文件为含有宏的 excel 表格，如果害怕存在安全风险，请不要启用宏（可自行查看宏代码确认安全性）。
 
 文件的使用方法很简单，修改原始路径、目标路径，然后输入文件夹名即可，获取文件夹名字也有对应的命令（表格E1位置），点击按钮 “查看原始路径下目录” 可以在 powershell 中快速执行该命令，效果如下图：
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.013.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.013" />
 
 复制以后回到 excel 直接粘贴就完事了。
 
@@ -115,11 +115,11 @@ mklink /d "C:\Users\ASK\AppData\Local\a\_test" "Z:\a\_test"
 
 迁移用户文件夹有两种方法。一种是手动移动文件夹（路径在 C:\Users\用户名），另一种是直接修改注册表，这里两种都介绍一下。需要移动的文件夹如下：
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.014.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.014" />
 
 先说明如何手动修改位置。这里以桌面为例，
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.015.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.015" />
 
 右键桌面 - 属性，进入位置选项卡，点击移动，选择要移动到的路径，确定即可。可能会提示是否将已有文件移动过去，选是就行。对于其他的文件夹也是同样的操作步骤。
 
@@ -127,4 +127,4 @@ mklink /d "C:\Users\ASK\AppData\Local\a\_test" "Z:\a\_test"
 
 然后修改下图中用红色圈圈出项即可，修改完成后需要重启。
 
-![IMG_256](assets\Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.016.png)
+<img src="https://github.com/LeeYouRan/AppData-directory-migration/blob/main/assets/Aspose.Words.ed5f29cb-4980-4f95-a7ab-971577d1a706.016" />
